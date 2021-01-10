@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function funcion()
+        {
+            alert ("Se ha ejecutado un evento");
+        }
+    </script>
+</head>
+<body>
+    <div class="seccion1">
+        <img src="img/secciones.png" alt="imagen" class="secciones">
+        <header>
+            <h1>Header: define la cabezera del documento</h1>
+        </header>
+        <nav>
+            <h2>Nav: define los enlaces dentro de la web o a otras paginas</h2>
+        </nav>
+        <main>
+            <h1>Main: agrupa el contenido principal</h1>
+        <section>
+            <h1>Section: define una seccion</h1>
+                <article>
+                    <h3>Article: contenido independiente detro de seccion</h2>
+                </article>
+                <aside>
+                    <h4>Aside: contenido secundario (generalmente anuncios)</h3>
+                </aside>    
+        </section>
+    </div>
+    <hr class="hr">
+    <section class="seccion2">
+        <p><span class="a">&#60p&#62</span>: párrafo</p>
+        <p><span class="a">&#60hr&#62</span>: linea de separación</p>
+        <p><span class="a">&#60br&#62</span>: saltos de linea; ejemplo: <br>esto es un salto de linea</p>
+        <p><span class="a">&#60a&#62</span>: se usa para poner un link &#60a href="link"&#62 ejemplo: <a href="https://github.com/PauASIR/examen">Github</a>
+            <br>se puede poner <span class="css">target="blank"</span> para abrir en nueva pesaña &#60a href="link" target="blank"&#62 ejemplo: <a href="https://github.com/PauASIR/examen" target="blank">Github</a></p>
+        <blockquote><span class="a">&#60blockquote&#62</span>: cita larga (con margenes)</blockquote>
+        <p><span class="a">&#60div&#62</span>: se usa para definir una seccion y darle la misma clase</p>
+        <span><span class="a">&#60span&#62</span>: contenedor de texto</span>
+        <p><em><span class="a">&#60em&#62</span>: cursiva; en css <span class="css">oblique</em></p>
+        <strong><span class="a">&#60strong&#62 y &#60b&#62</span>: negrita; </strong><b>en css <span class="css">font-weight: bold</b></b>
+        <p><small><span class="a">&#60small&#62</span>: para hacer mas pequeño un texto; en css <span class="css">font-size: smaller</span></small></p>
+        <p><span class="a">&#60s&#62</span>: <s>texto taxado</s>; en css <span class="css">text-decoration: line-through</span></p>
+        <p><span class="a">&#60time&#62</span>: para indicar una fecha <time datetime="2020-01-10">10 de enero de 2021</time></p>
+        <sub><span class="a">&#60sub&#62</span>: subindice</sub>
+        <sup><span class="a">&#60sup&#62</span>: superindice</sup>
+        <p><i><span class="a">&#60i&#62</span>: tipo de fuente italic; en css <span class="css">font-style: italic</span></i></p>
+        <mark><span class="a">&#60mark&#62</span>: fondo texto amarillo; en css <span class="css">background-color: yellow</span></mark>
+        <p><cite><span class="a">&#60cite&#62</span>: es una cita</cite></p>
+        <p><q><span class="a">&#60q&#62</span>: entrecomillado</q></p>
+        <p><dfn><span class="a">&#60dfn&#62</span>: no se muy bien q es</dfn></p>
+        <p><span class="a">&#60abbr&#62</span>: representa una abreviacion y al pulsar sobre ella aparece ejemplo: <abbr title="Hypertext Markup Language">HTML</abbr></p>    
+        <p><span class="a">&#60img&#62</span>: imagenes</p>
+        <h3>Propiedades imagenes</h3>
+            <p><span class="css">float</span>: situar una imagen, por ejemplo a la izquierda: <span class="css">float: left;</span></p>
+            <p><span class="css">clear</span>: hace que no haya elementos flotantes a la derecha, izquiera o ambos ejemplo: <span class="css">clear: left;</span> o <span class="css">clear: both;</span>></p>
+            <p>para centrar la imagen o bien la ponemos dentro de un texto con la propiedad <span class="css">text-align: center;</span> o con <span class="css">display: block;</span> y <span class="css">margin: auto;</span></p>
+            <p><span class="css">height</span>: altura <span class="css">width</span>: anchura</p>
+    </section>
+    <hr class="hr">
+    <section class="seccion3">
+        <h2>Listas</h2>
+        <h3>Lista no ordenada</h3>
+        <ul>
+            <li><span class="a">ul</span>: lista no ordenada</li>
+            <li>&#60li&#62se usa <span class="a">li</span> para definir cada linea&#60/li&#62</li>
+        </ul>
+        <hr>
+        <ul style="list-style-type: circle;">
+            <li><span class="css">list-style-type: circle;</span></li>
+        </ul>
+        <hr>
+        <ul style="list-style-type: square;">
+            <li><span class="css">list-style-type: square;</span></li>
+        </ul>
+        <hr>
+        <h3>Lista ordenada</h3>
+        <ol>
+            <li><span class="a">ol</span>: lista ordenada</li>
+        </ol>
+        <hr>
+        <ol type="A">
+            <li><span class="css">type="A"</span></li>
+        </ol>
+        <hr>
+        <ol type="I">
+            <li> <span class="css">type="I"</span></li>
+        </ol>
+        <hr>
+        <ol reversed>
+            <li><span class="css">reversed</span>: empieza por el final</li>
+            <li>2</li>
+            <li>3</li>
+        </ol>
+        <hr>
+        <ol start="4">
+            <li><span class="css">start="4"</span>: empieza con un numero determinado</li>
+        </ol>
+        <hr>
+        <h3>Lista de definición</h3>
+        <dl>
+            <dt><span class="a">dl</span></dt><dd>: lista de definición</dd>
+            <dt>se usa <span class="a">dt</span> para definir cada linea</dt><dd>y <span class="a">dd</span> para cada definición</dd>
+            <dt>&#60dt&#62esto es un ejemplo de dt&#60/dt&#62</dt><dd>&#60dd&#62y esto uno de dd&#60/dd&#62</dd>
+        </dl>
+
+    </section>
+    <hr class="hr">
+    <section class="seccion4">
+        <h2>Tablas</h2>
+        <table border="1">
+            <caption>el <span class="a">&#60caption&#62</span> se usa opcionalmente para poner un texto explicativo en una tabla</caption>
+            <tr>
+                <td>se usa <span class="a">&#60table&#62</span> para indicar una tabla</td>
+                <td><span class="a">&#60tr&#62</span> para definir una fila</td>
+            </tr>
+            <tr>
+                <td><span class="a">&#60td&#62</span> para definir una celda dentro de una fila</td>
+                <td>el atributo <span class="css">border="tamaño del borde"</span> se usa para poner un borde a la tabla</td>
+            </tr>
+        </table>
+        <hr>
+        <table border="1">
+            <tr>
+                <td colspan="2"><span class="css">colspan="num de celdas unidas"</span> se usa para unir celdas horizontalmente</td>
+            </tr>
+            <tr>
+                <td rowspan="2"><span class="css">rowspan="n"</span> se usa para unir celdas verticalmente </td>
+                <td>celda de ejemplo</td>
+            </tr>
+            <tr>
+                <td>celda de ejemplo</td>
+            </tr>
+        </table>
+        <hr>
+        <table class="tablacolor">
+            <tr>
+                <td>se puede cambiar de color y grosor del borde; ejemplo: <span class="css">border: purple 4px solid;</span></td>
+                <td class="dotted"><span class="css">border: dotted;</span> con <span class="css">padding-right: 60px;</span></td>
+            </tr>
+            <tr>
+                <td class="dashed"><span class="css">border: dashed;</span></td>
+                <td></td>
+            </tr>
+        </table>
+    </section>
+    <hr class="hr">
+    <section class="seccion5">
+            <h3>Eventos de teclado:</h3>
+    <div>
+        <p>onkeydown (cuando se pulsa una tecla) <input type="text" onkeydown="funcion()"></p>
+        <p>onkeypress (cuando se pulsa y despulsa una tecla) <input type="text" onkeypress="funcion()"></p>
+        <p>onkeyup (cuando se despulsa una tecla) <input type="text" onkeyup="funcion()"></p>
+    </div>
+            <h3>Eventos de formulario:</h3>
+    <div>
+        <p>onblur (cuando un elemento deja de ser seleccionado) <input type="text" onblur="funcion ()"></p>
+        <p>onchange (cuando un elemento cambia) <input type="text" onchange="funcion()"></p>
+        <p>onfocus (cuando se selecciona el elemento) <input type="text" onfocus="funcion()"></p>
+        <p>onreset (cuando hacemos reset al formulario) <input type="text" onreset="funcion()"></p>
+        <p>onselect (cuando un elemento se selecciona <input type="text" onselect="funcion()"></p>
+        <p>onsubmit (cuando un formulario se envia) <input type="text" onsubmit="funcion()"></p>
+    </div>
+            <h3>Eventos de ratón:</h3>
+    <div>
+        <p>onclick (cuando se hace clic) <input type="text" onclick="funcion()"></p>
+        <p>ondblclick (cuando se hace doble clic) <input type="text" ondblclick="funcion()"></p>
+        <p>onmousedown (cuando se pulsa un boton del ratón) <input type="text" onmousedown="funcion()"></p>
+        <p>onmousemove (cuando se mueve el ratón) <input type="text" onmousemove="funcion()"></p>
+        <p>onmouseout (cuando el cursor deja de situarse sobre el elemento) <input type="text" onmouseout="funcion()"></p>
+        <p>onmouseover (cuando el ratón se situa sobre el elemento) <input type="text" onmouseover="funcion()"></p>
+        <p>onmouseup (cuando se despulsa un boton del ratón) <input type="text" onmouseup="funcion()"></p>
+    </div>
+    </section>
+</main>
+</body>
+</html>
